@@ -2,12 +2,6 @@ package br.edu.ifsp.adi.ativ01.resources;
 
 import java.util.List;
 import java.util.UUID;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-
 import br.edu.ifsp.adi.ativ01.dao.UserDAO;
 import br.edu.ifsp.adi.ativ01.entities.User;
 import jakarta.ws.rs.Consumes;
@@ -23,10 +17,7 @@ import jakarta.ws.rs.core.MediaType;
 
 @Path("/users")
 public class UserResource {
-	// Instâncias do Hibernate para manipular entidade.
-	protected EntityManagerFactory emf = Persistence.createEntityManagerFactory("userPU");
-	protected EntityManager em = this.emf.createEntityManager();
-
+	
 	// Recupera todos os usuários
 	@GET
 	@Path("/get")
