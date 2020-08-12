@@ -72,3 +72,4 @@ local.properties
 /test-classes/
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse
+/target/
